@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Notas dos Alunos</title>
+  <link rel="stylesheet" href="procedimento.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Notas dos Alunos</h1>
+
+    <div class="buttons">
+      <button onclick="adicionarLinhaMedia()">Adicionar Linha de Médias</button>
+      <button onclick="adicionarColunaMedia()">Adicionar Coluna de Médias</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="tabela" class="notas">
+    
+        <thead>
+          <tr>
+            <th class="col-aluno" rowspan="2">Aluno</th>
+            <th class="semestre" colspan="3">Semestre 1</th>
+            <th class="semestre" colspan="3">Semestre 2</th>
+            <th class="semestre" colspan="3">Semestre 3</th>
+          </tr>
+          <tr>
+            <th>Nota 1</th><th>Nota 2</th><th>Nota 3</th>
+            <th>Nota 1</th><th>Nota 2</th><th>Nota 3</th>
+            <th>Nota 1</th><th>Nota 2</th><th>Nota 3</th>
+          </tr>
+        </thead>
+
+   
+        <tbody>
+          <tr>
+            <th>João</th>
+            <td contenteditable="true">10</td><td contenteditable="true">8</td><td contenteditable="true">9</td>
+            <td contenteditable="true">6</td><td contenteditable="true">8.7</td><td contenteditable="true">10</td>
+            <td contenteditable="true">6</td><td contenteditable="true">7</td><td contenteditable="true">9</td>
+          </tr>
+          <tr><th>Maria</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><th>José</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><th>Paulo</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><th>Miguel</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+          <tr><th>Julia</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="procedimento.js"></script>
+</body>
+</html>
