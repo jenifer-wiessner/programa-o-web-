@@ -12,4 +12,17 @@ array("desenvWeb",
 
 array("Intro Web",
 "bancoDados 2", "engSoft 2")));
+
+function listarpastas($pastas){
+if (!is_array($pastas)){
+
+foreach ($pastas as $elemento => $valor){
+listarpastas($valor);
+} else {
+    echo $pasta;
+}
+}
+}
+
+listarpastas($pastas);
 ?>
