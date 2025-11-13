@@ -20,6 +20,7 @@ foreach ($pastas as $elemento => $valor){
 listarpastas($valor);
 } else {
     echo $pasta;
+
 }
 }
 }

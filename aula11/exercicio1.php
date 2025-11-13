@@ -1,9 +1,9 @@
 <?php 
 include("local.php");
 
-if($coneccao) {
+if($coneccao) 
     if($result) {
-        while($row =) {
+        while($row ) {
             $DadosPessoas = array(
                 $_POST['nome'],
                 $_POST['sobrenome'],
