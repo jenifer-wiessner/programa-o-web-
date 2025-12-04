@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const respostas = [];
 
   try {
-      // Ajuste do caminho para seu src
+      
       const response = await fetch("../../src/perguntas.php");
       const data = await response.json();
 
