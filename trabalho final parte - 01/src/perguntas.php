@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-include 'db.php';
+require_once 'db.php';
 
 try {
     $stmt = $conn->query("
@@ -9,9 +9,17 @@ try {
         WHERE status = 'ativa' 
         ORDER BY id_pergunta ASC
     ");
+
     $perguntas = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo json_encode($perguntas);
+
+    echo json_encode([
+        "sucesso" => true,
+        "perguntas" => $perguntas
+    ]);
 } catch (PDOException $e) {
-    echo json_encode(["erro" => $e->getMessage()]);
+    echo json_encode([
+        "sucesso" => false,
+        "erro" => $e->getMessage()
+    ]);
 }
 ?>
